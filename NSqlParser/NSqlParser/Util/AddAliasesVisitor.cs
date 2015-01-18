@@ -8,7 +8,7 @@ using NSqlParser.Statement.Select;
  * prefix of A and a counter to generate new aliases (e.g. A1, A5, ...). This
  * behaviour can be altered.
  *
- * @author tw
+ * @author Paratoner
  */
 
 namespace NSqlParser.Util
