@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2364697A-7FD0-48CE-B409-186859A2983E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NSqlParser</RootNamespace>
+    <AssemblyName>NSqlParser</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Expression\Alias.cs" />
+    <Compile Include="Expression\AllComparisonExpression.cs" />
+    <Compile Include="Expression\AnalyticExpression.cs" />
+    <Compile Include="Expression\AnyComparisonExpression.cs" />
+    <Compile Include="Expression\BinaryExpression.cs" />
+    <Compile Include="Expression\CaseExpression.cs" />
+    <Compile Include="Expression\CastExpression.cs" />
+    <Compile Include="Expression\DateValue.cs" />
+    <Compile Include="Expression\DoubleValue.cs" />
+    <Compile Include="Expression\IExpression.cs" />
+    <Compile Include="Expression\IExpressionVisitor.cs" />
+    <Compile Include="Expression\ExpressionVisitorAdapter.cs" />
+    <Compile Include="Expression\ExtractExpression.cs" />
+    <Compile Include="Expression\Function.cs" />
+    <Compile Include="Expression\IntervalExpression.cs" />
+    <Compile Include="Expression\JdbcNamedParameter.cs" />
+    <Compile Include="Expression\JdbcParameter.cs" />
+    <Compile Include="Expression\JsonExpression.cs" />
+    <Compile Include="Expression\LongValue.cs" />
+    <Compile Include="Expression\NullValue.cs" />
+    <Compile Include="Expression\Operators\Arithmetic\Addition.cs" />
+    <Compile Include="Expression\Operators\Arithmetic\BitwiseAnd.cs" />
+    <Compile Include="Expression\Operators\Arithmetic\BitwiseOr.cs" />
+    <Compile Include="Expression\Operators\Arithmetic\BitwiseXor.cs" />
+    <Compile Include="Expression\Operators\Arithmetic\Concat.cs" />
+    <Compile Include="Expression\Operators\Arithmetic\Division.cs" />
+    <Compile Include="Expression\Operators\Arithmetic\Modulo.cs" />
+    <Compile Include="Expression\Operators\Arithmetic\Multiplication.cs" />
+    <Compile Include="Expression\Operators\Arithmetic\Subtraction.cs" />
+    <Compile Include="Expression\Operators\Conditional\AndExpression.cs" />
+    <Compile Include="Expression\Operators\Conditional\OrExpression.cs" />
+    <Compile Include="Expression\Operators\Relational\Between.cs" />
+    <Compile Include="Expression\Operators\Relational\EqualsTo.cs" />
+    <Compile Include="Expression\Operators\Relational\ExistsExpression.cs" />
+    <Compile Include="Expression\Operators\Relational\ExpressionList.cs" />
+    <Compile Include="Expression\Operators\Relational\GreaterThan.cs" />
+    <Compile Include="Expression\Operators\Relational\GreaterThanEquals.cs" />
+    <Compile Include="Expression\Operators\Relational\InExpression.cs" />
+    <Compile Include="Expression\Operators\Relational\IsNullExpression.cs" />
+    <Compile Include="Expression\Operators\Relational\IItemsList.cs" />
+    <Compile Include="Expression\Operators\Relational\IItemsListVisitor.cs" />
+    <Compile Include="Expression\Operators\Relational\ItemsListVisitorAdapter.cs" />
+    <Compile Include="Expression\Operators\Relational\LikeExpression.cs" />
+    <Compile Include="Expression\Operators\Relational\Matches.cs" />
+    <Compile Include="Expression\Operators\Relational\MinorThan.cs" />
+    <Compile Include="Expression\Operators\Relational\MinorThanEquals.cs" />
+    <Compile Include="Expression\Operators\Relational\MultiExpressionList.cs" />
+    <Compile Include="Expression\Operators\Relational\NotEqualsTo.cs" />
+    <Compile Include="Expression\Operators\Relational\NullReferenceExcepion.cs" />
+    <Compile Include="Expression\Operators\Relational\OldOracleJoinBinaryExpression.cs" />
+    <Compile Include="Expression\Operators\Relational\RegExpMatchOperator.cs" />
+    <Compile Include="Expression\Operators\Relational\RegExpMatchOperatorType.cs" />
+    <Compile Include="Expression\Operators\Relational\RegExpMySQLOperator.cs" />
+    <Compile Include="Expression\Operators\Relational\ISupportsOldOracleJoinSyntax.cs" />
+    <Compile Include="Expression\OracleHierarchicalExpression.cs" />
+    <Compile Include="Expression\Parenthesis.cs" />
+    <Compile Include="Expression\SignedExpression.cs" />
+    <Compile Include="Expression\StringValue.cs" />
+    <Compile Include="Expression\TimestampValue.cs" />
+    <Compile Include="Expression\TimeValue.cs" />
+    <Compile Include="Expression\WhenClause.cs" />
+    <Compile Include="Expression\WindowElement.cs" />
+    <Compile Include="Expression\WindowOffset.cs" />
+    <Compile Include="Expression\WindowRange.cs" />
+    <Content Include="NSqlParser.cc" />
+    <Compile Include="Parser\INSqlParser.cs" />
+    <Compile Include="Parser\NSqlParserManager.cs" />
+    <Compile Include="Parser\NSqlParserUtil.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Schema\Column.cs" />
+    <Compile Include="Schema\Database.cs" />
+    <Compile Include="Schema\IMultiPartName.cs" />
+    <Compile Include="Schema\Server.cs" />
+    <Compile Include="Schema\Table.cs" />
+    <Compile Include="Statement\Alter\Alter.cs" />
+    <Compile Include="Statement\Create\Index\CreateIndex.cs" />
+    <Compile Include="Statement\Create\Table\ColDataType.cs" />
+    <Compile Include="Statement\Create\Table\ColumnDefinition.cs" />
+    <Compile Include="Statement\Create\Table\CreateTable.cs" />
+    <Compile Include="Statement\Create\Table\ForeignKeyIndex.cs" />
+    <Compile Include="Statement\Create\Table\Index.cs" />
+    <Compile Include="Statement\Create\Table\NamedConstraint.cs" />
+    <Compile Include="Statement\Create\View\CreateView.cs" />
+    <Compile Include="Statement\Delete\Delete.cs" />
+    <Compile Include="Statement\Drop\Drop.cs" />
+    <Compile Include="Statement\Execute\Execute.cs" />
+    <Compile Include="Statement\Insert\Insert.cs" />
+    <Compile Include="Statement\IStatement.cs" />
+    <Compile Include="Statement\Replace\Replace.cs" />
+    <Compile Include="Statement\Select\AddGroupBySelectVisitor.cs" />
+    <Compile Include="Statement\Select\AllColumns.cs" />
+    <Compile Include="Statement\Select\AllTableColumns.cs" />
+    <Compile Include="Statement\Select\Distinct.cs" />
+    <Compile Include="Statement\Select\ExceptOp.cs" />
+    <Compile Include="Statement\Select\ExpressionListItem.cs" />
+    <Compile Include="Statement\Select\Fetch.cs" />
+    <Compile Include="Statement\Select\IFromItem.cs" />
+    <Compile Include="Statement\Select\IFromItemVisitor.cs" />
+    <Compile Include="Statement\Select\FromItemVisitorAdapter.cs" />
+    <Compile Include="Statement\Select\FunctionItem.cs" />
+    <Compile Include="Statement\Select\IntersectOp.cs" />
+    <Compile Include="Statement\Select\IIntoTableVisitor.cs" />
+    <Compile Include="Statement\Select\IntoTableVisitorAdapter.cs" />
+    <Compile Include="Statement\Select\Join.cs" />
+    <Compile Include="Statement\Select\LateralSubSelect.cs" />
+    <Compile Include="Statement\Select\Limit.cs" />
+    <Compile Include="Statement\Select\MinusOp.cs" />
+    <Compile Include="Statement\Select\Offset.cs" />
+    <Compile Include="Statement\Select\OrderByElement.cs" />
+    <Compile Include="Statement\Select\IOrderByVisitor.cs" />
+    <Compile Include="Statement\Select\OrderByVisitorAdapter.cs" />
+    <Compile Include="Statement\Select\Pivot.cs" />
+    <Compile Include="Statement\Select\IPivotVisitor.cs" />
+    <Compile Include="Statement\Select\PivotVisitorAdapter.cs" />
+    <Compile Include="Statement\Select\PivotXml.cs" />
+    <Compile Include="Statement\Select\PlainSelect.cs" />
+    <Compile Include="Statement\Select\Select.cs" />
+    <Compile Include="Statement\Select\ISelectBody.cs" />
+    <Compile Include="Statement\Select\SelectExpressionItem.cs" />
+    <Compile Include="Statement\Select\ISelectItem.cs" />
+    <Compile Include="Statement\Select\ISelectItemVisitor.cs" />
+    <Compile Include="Statement\Select\SelectItemVisitorAdapter.cs" />
+    <Compile Include="Statement\Select\ISelectVisitor.cs" />
+    <Compile Include="Statement\Select\AddExpressionSelectVisitor.cs" />
+    <Compile Include="Statement\Select\SelectVisitorAdapter.cs" />
+    <Compile Include="Statement\Select\SetOperation.cs" />
+    <Compile Include="Statement\Select\SetOperationList.cs" />
+    <Compile Include="Statement\Select\SetOperationType.cs" />
+    <Compile Include="Statement\Select\SubJoin.cs" />
+    <Compile Include="Statement\Select\SubSelect.cs" />
+    <Compile Include="Statement\Select\Top.cs" />
+    <Compile Include="Statement\Select\UnionOp.cs" />
+    <Compile Include="Statement\Select\ValuesList.cs" />
+    <Compile Include="Statement\Select\WithItem.cs" />
+    <Compile Include="Statement\Statements.cs" />
+    <Compile Include="Statement\IStatementVisitor.cs" />
+    <Compile Include="Statement\StatementVisitorAdapter.cs" />
+    <Compile Include="Statement\Truncate\Truncate.cs" />
+    <Compile Include="Statement\Update\Update.cs" />
+    <Compile Include="Util\AddAliasesVisitor.cs" />
+    <Compile Include="Util\ConnectExpressionsVisitor.cs" />
+    <Compile Include="Util\Deparser\CreateIndexDeParser.cs" />
+    <Compile Include="Util\Deparser\CreateTableDeParser.cs" />
+    <Compile Include="Util\Deparser\CreateViewDeParser.cs" />
+    <Compile Include="Util\Deparser\DeleteDeParser.cs" />
+    <Compile Include="Util\Deparser\ExecuteDeParser.cs" />
+    <Compile Include="Util\Deparser\ExpressionDeParser.cs" />
+    <Compile Include="Util\Deparser\InsertDeParser.cs" />
+    <Compile Include="Util\Deparser\ReplaceDeParser.cs" />
+    <Compile Include="Util\Deparser\SelectDeParser.cs" />
+    <Compile Include="Util\Deparser\StatementDeParser.cs" />
+    <Compile Include="Util\Deparser\UpdateDeParser.cs" />
+    <Compile Include="Util\Extensions.cs" />
+    <Compile Include="Util\SelectUtils.cs" />
+    <Compile Include="Util\TablesNamesFinder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Expression\Operators\Arithmetic\arithmetic.uod" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
