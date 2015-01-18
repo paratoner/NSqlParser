@@ -6,8 +6,8 @@ using NSqlParser.Schema;
 using NSqlParser.Statement.Insert;
 using NSqlParser.Statement.Select;
 /**
- * A class to de-parse (that is, tranform from JSqlParser hierarchy into a
- * string) an {@link net.sf.jsqlparser.statement.insert.Insert}
+ * A class to de-parse (that is, tranform from NSqlParser hierarchy into a
+ * string) an {@link NSqlParser.statement.insert.Insert}
  */
 
 namespace NSqlParser.Util.Deparser
@@ -25,11 +25,11 @@ namespace NSqlParser.Util.Deparser
 
         /**
      * @param expressionVisitor a {@link ExpressionVisitor} to de-parse
-     * {@link net.sf.jsqlparser.expression.Expression}s. It has to share the
+     * {@link NSqlParser.expression.Expression}s. It has to share the
      * same<br>
      * StringBuilder (buffer parameter) as this object in order to work
      * @param selectVisitor a {@link SelectVisitor} to de-parse
-     * {@link net.sf.jsqlparser.statement.select.Select}s. It has to share the
+     * {@link NSqlParser.statement.select.Select}s. It has to share the
      * same<br>
      * StringBuilder (buffer parameter) as this object in order to work
      * @param buffer the buffer that will be filled with the insert

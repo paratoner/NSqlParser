@@ -49,10 +49,10 @@ namespace NSqlParser.Statement.Update
         }
 
         /**
-     * The {@link net.sf.jsqlparser.schema.Column}s in this update (as col1 and
+     * The {@link NSqlParser.schema.Column}s in this update (as col1 and
      * col2 in UPDATE col1='a', col2='b')
      *
-     * @return a list of {@link net.sf.jsqlparser.schema.Column}s
+     * @return a list of {@link NSqlParser.schema.Column}s
      */
         public List<Column> getColumns()
         {

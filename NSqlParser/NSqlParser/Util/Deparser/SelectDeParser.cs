@@ -5,8 +5,8 @@ using NSqlParser.Expression;
 using NSqlParser.Schema;
 using NSqlParser.Statement.Select;
 /**
- * A class to de-parse (that is, tranform from JSqlParser hierarchy into a
- * string) a {@link net.sf.jsqlparser.statement.select.Select}
+ * A class to de-parse (that is, tranform from NSqlParser hierarchy into a
+ * string) a {@link NSqlParser.statement.select.Select}
  */
 
 namespace NSqlParser.Util.Deparser

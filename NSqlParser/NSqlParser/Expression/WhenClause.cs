@@ -14,7 +14,7 @@ namespace NSqlParser.Expression
         /*
 	 * (non-Javadoc)
 	 * 
-	 * @see net.sf.jsqlparser.expression.Expression#Accept(net.sf.jsqlparser.expression.ExpressionVisitor)
+	 * @see NSqlParser.expression.Expression#Accept(NSqlParser.expression.ExpressionVisitor)
 	 */
 	
         public void Accept(IExpressionVisitor expressionVisitor) {

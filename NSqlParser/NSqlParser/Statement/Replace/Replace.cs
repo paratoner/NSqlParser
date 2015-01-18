@@ -32,10 +32,10 @@ namespace NSqlParser.Statement.Replace
         }
 
         /**
-     * A list of {@link net.sf.jsqlparser.schema.Column}s either from a "REPLACE
+     * A list of {@link NSqlParser.schema.Column}s either from a "REPLACE
      * mytab (col1, col2) [...]" or a "REPLACE mytab SET col1=exp1, col2=exp2".
      *
-     * @return a list of {@link net.sf.jsqlparser.schema.Column}s
+     * @return a list of {@link NSqlParser.schema.Column}s
      */
         public List<Column> getColumns()
         {
@@ -63,7 +63,7 @@ namespace NSqlParser.Statement.Replace
         }
 
         /**
-     * A list of {@link net.sf.jsqlparser.expression.Expression}s (from a
+     * A list of {@link NSqlParser.expression.Expression}s (from a
      * "REPLACE mytab SET col1=exp1, col2=exp2"). <br>
      * it is null in case of a "REPLACE mytab (col1, col2) [...]"
      */

@@ -173,7 +173,7 @@ TOKEN: /* Numeric Constants */
 						can expand the following rule to accept additional letters. Here is the addition of german umlauts.
 
 						There seems to be no way to recognize letters by an external function to allow
-						a configurable addition. One must rebuild JSqlParser with this new "Letterset".
+						a configurable addition. One must rebuild NSqlParser with this new "Letterset".
 						*/
 						| < #ADDITIONAL_LETTERS: ["ä", "ö", "ü", "Ä", "Ö", "Ü", "ß"] >
 				}

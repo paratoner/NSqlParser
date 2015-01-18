@@ -38,7 +38,7 @@ namespace NSqlParser.Statement.Insert
         /**
      * Get the columns (found in "INSERT INTO (col1,col2..) [...]" )
      *
-     * @return a list of {@link net.sf.jsqlparser.schema.Column}
+     * @return a list of {@link NSqlParser.schema.Column}
      */
         public List<Column> getColumns()
         {

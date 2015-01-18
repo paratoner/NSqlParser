@@ -11,14 +11,14 @@ namespace NSqlParser.Parser
     {
         public IStatement Parse(System.IO.StreamReader statementReader)
         {
-            //CCJSqlParser parser = new CCJSqlParser(statementReader);
+            //CCNSqlParser parser = new CCNSqlParser(statementReader);
             //try
             //{
             //    return parser.Statement();
             //}
             //catch (Exception ex)
             //{
-            //    throw new JSQLParserException(ex);
+            //    throw new NSqlParserException(ex);
             //}
             //todo: 
             return null;

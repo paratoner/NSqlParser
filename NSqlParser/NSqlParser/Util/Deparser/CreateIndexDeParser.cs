@@ -1,6 +1,6 @@
 /**
- * A class to de-parse (that is, tranform from JSqlParser hierarchy into a string)
- * a {@link net.sf.jsqlparser.statement.create.index.CreateIndex}
+ * A class to de-parse (that is, tranform from NSqlParser hierarchy into a string)
+ * a {@link NSqlParser.statement.create.index.CreateIndex}
  *
  * @author Paratoner
  */

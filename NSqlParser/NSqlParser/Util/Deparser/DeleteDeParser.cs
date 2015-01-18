@@ -1,6 +1,6 @@
 /**
- * A class to de-parse (that is, tranform from JSqlParser hierarchy into a
- * string) a {@link net.sf.jsqlparser.statement.delete.Delete}
+ * A class to de-parse (that is, tranform from NSqlParser hierarchy into a
+ * string) a {@link NSqlParser.statement.delete.Delete}
  */
 
 using System.Text;

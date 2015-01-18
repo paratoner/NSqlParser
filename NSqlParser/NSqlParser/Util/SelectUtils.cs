@@ -40,7 +40,7 @@ namespace NSqlParser.Util
      * @param table
      * @param expr
      * @return 
-     * @throws net.sf.jsqlparser.JSQLParserException 
+     * @throws NSqlParser.NSqlParserException 
      */
         public static Select buildSelectFromTableAndExpressions(Table table, string[] expr)
         {

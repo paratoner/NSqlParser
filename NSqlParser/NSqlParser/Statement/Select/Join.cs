@@ -143,7 +143,7 @@ namespace NSqlParser.Statement.Select
         }
 
         /**
-	 * Returns the "USING" list of {@link net.sf.jsqlparser.schema.Column}s (if
+	 * Returns the "USING" list of {@link NSqlParser.schema.Column}s (if
 	 * any)
 	 */
         public List<Column> getUsingColumns() {

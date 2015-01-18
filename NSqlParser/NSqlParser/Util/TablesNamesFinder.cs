@@ -292,7 +292,7 @@ namespace NSqlParser.Util
         /*
      * (non-Javadoc)
      *
-     * @see net.sf.jsqlparser.expression.ExpressionVisitor#Visit(net.sf.jsqlparser.expression.CaseExpression)
+     * @see NSqlParser.expression.ExpressionVisitor#Visit(NSqlParser.expression.CaseExpression)
      */
         public void Visit(CaseExpression caseExpression) {
         }
@@ -300,7 +300,7 @@ namespace NSqlParser.Util
         /*
      * (non-Javadoc)
      *
-     * @see net.sf.jsqlparser.expression.ExpressionVisitor#Visit(net.sf.jsqlparser.expression.WhenClause)
+     * @see NSqlParser.expression.ExpressionVisitor#Visit(NSqlParser.expression.WhenClause)
      */
         public void Visit(WhenClause whenClause) {
         }

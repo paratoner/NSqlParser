@@ -10,38 +10,38 @@ namespace NSqlParser.Parser
     class NSqlParserUtil
     {
     //    public static Statement parse(Reader statementReader) {
-    //    CCJSqlParser parser = new CCJSqlParser(statementReader);
+    //    CCNSqlParser parser = new CCNSqlParser(statementReader);
     //    try {
     //        return parser.Statement();
     //    } catch (Exception ex) {
-    //        throw new JSQLParserException(ex);
+    //        throw new NSqlParserException(ex);
     //    } 
     //}
 	
-    //public static Statement parse(string sql) throws JSQLParserException {
-    //    CCJSqlParser parser = new CCJSqlParser(new stringReader(sql));
+    //public static Statement parse(string sql) throws NSqlParserException {
+    //    CCNSqlParser parser = new CCNSqlParser(new stringReader(sql));
     //    try {
     //        return parser.Statement();
     //    } catch (Exception ex) {
-    //        throw new JSQLParserException(ex);
+    //        throw new NSqlParserException(ex);
     //    } 
     //}
 	
-    //public static Statement parse(InputStream is) throws JSQLParserException {
-    //    CCJSqlParser parser = new CCJSqlParser(is);
+    //public static Statement parse(InputStream is) throws NSqlParserException {
+    //    CCNSqlParser parser = new CCNSqlParser(is);
     //    try {
     //        return parser.Statement();
     //    } catch (Exception ex) {
-    //        throw new JSQLParserException(ex);
+    //        throw new NSqlParserException(ex);
     //    } 
     //}
 	
-    //public static Statement parse(InputStream is, string encoding) throws JSQLParserException {
-    //    CCJSqlParser parser = new CCJSqlParser(is,encoding);
+    //public static Statement parse(InputStream is, string encoding) throws NSqlParserException {
+    //    CCNSqlParser parser = new CCNSqlParser(is,encoding);
     //    try {
     //        return parser.Statement();
     //    } catch (Exception ex) {
-    //        throw new JSQLParserException(ex);
+    //        throw new NSqlParserException(ex);
     //    } 
     //}
 	
@@ -49,14 +49,14 @@ namespace NSqlParser.Parser
      * Parse an expression.
      * @param expression
      * @return
-     * @throws JSQLParserException 
+     * @throws NSqlParserException 
      */
     public static IExpression parseExpression(string expression) {
-        //CCJSqlParser parser = new CCJSqlParser(new stringReader(expression));
+        //CCNSqlParser parser = new CCNSqlParser(new stringReader(expression));
         //try {
         //    return parser.SimpleExpression();
         //} catch (Exception ex) {
-        //    throw new JSQLParserException(ex);
+        //    throw new NSqlParserException(ex);
         //} 
         //todo :
         return null;
@@ -66,26 +66,26 @@ namespace NSqlParser.Parser
     // * Parse an conditional expression. This is the expression after a where clause.
     // * @param condExpr
     // * @return
-    // * @throws JSQLParserException 
+    // * @throws NSqlParserException 
     // */
-    //public static IExpression parseCondExpression(string condExpr) throws JSQLParserException {
-    //    CCJSqlParser parser = new CCJSqlParser(new stringReader(condExpr));
+    //public static IExpression parseCondExpression(string condExpr) throws NSqlParserException {
+    //    CCNSqlParser parser = new CCNSqlParser(new stringReader(condExpr));
     //    try {
     //        return parser.Expression();
     //    } catch (Exception ex) {
-    //        throw new JSQLParserException(ex);
+    //        throw new NSqlParserException(ex);
     //    } 
     //}
     
     ///**
     // * Parse a statement list.
     // */
-    //public static Statements parseStatements(string sqls) throws JSQLParserException {
-    //    CCJSqlParser parser = new CCJSqlParser(new stringReader(sqls));
+    //public static Statements parseStatements(string sqls) throws NSqlParserException {
+    //    CCNSqlParser parser = new CCNSqlParser(new stringReader(sqls));
     //    try {
     //        return parser.Statements();
     //    } catch (Exception ex) {
-    //        throw new JSQLParserException(ex);
+    //        throw new NSqlParserException(ex);
     //    } 
     //}
     }
